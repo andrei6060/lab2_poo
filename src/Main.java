@@ -7,8 +7,8 @@ public class Main {
 
         Human mom = new Human(name, address);
 
-//        Human dad = new Human(mom.name, mom.address);
-        Human dad = new Human(mom.address, mom.name);
+        Human dad = new Human(mom.name, mom.address);
+//        Human dad = new Human(mom.address, mom.name);
         Human child = new Human(mom);
 
 
@@ -31,5 +31,10 @@ public class Main {
         System.out.println("----------");
         System.out.println(mom);
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+//        SuperHuman superMan = new SuperHuman();
+//        superMan.showOff();
+        SuperHuman superMan = new SuperHuman(dad, "Can repair anything");
+        superMan.showOff();
     }
 }
